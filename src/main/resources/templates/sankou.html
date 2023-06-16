@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang=ja xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial of Thymeleaf</title>
+    <link rel="stylesheet" th:href="@{/css/obj.css}">
+</head>
+<body>
+    <h1>Thymeleaf Page</h1>
+    <p th:text="'val1 = ' + ${val1}"></p>
+    <p th:text="'val2 = ' + ${val2}"></p>
+    <p th:text="${val1} eq ${val2} ? '一致' : '不一致'"></p>
+</body>
+</html>
+
+<!-- 3番目の<p>タグのth:text属性に三項演算子が使われています。
+${val1} eq ${val2}が条件式、'一致'は真の場合の値、'不一致'が偽の場合の値です。
+eqは比較演算子で${val1}と${val2}の値が同じかどうかを比較します。両方の値が同じ場合、true（真）を返します。 -->

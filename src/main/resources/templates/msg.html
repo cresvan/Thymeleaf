@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial of Thymeleaf</title>
+</head>
+<body>
+<!-- <h1>と<p>タグのth:text属性に記載している#{メッセージ名}の形でメッセージの値を取得できます。 -->
+    <h1 th:text="#{content.title}">Thymeleaf Page</h1>
+    <p th:text="#{content.message}"></p>
+</body>
+</html>
